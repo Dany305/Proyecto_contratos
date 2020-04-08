@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="css/pos.css">
+</head>
+<body>
+    <center>
+        <h1>Contratos</h1>
+    </center>
+
+    <div class="elec">
+        <h2>Tipos de contratos</h3>
+        <input type="radio" name="contrato" value="1" onclick="compr();">Conpraventa
+    </div>
+
+    <div class="p1" id="comp" style="width: 500px; height: 400px;">
+        <h2>Vista Previa</h2>
+        <embed id="comp" src="pdf/compve.pdf#toolbar=0" type="application/pdf" width="100%" height="100%" />   
+    </div>
+
+    <script>
+        document.getElementById('comp').style.display="none";
+
+
+        function compr(){
+            document.getElementById('comp').style.display="block";
+        }
+    </script>
+</body>
